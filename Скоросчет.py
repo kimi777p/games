@@ -27,6 +27,6 @@ while true:
             print('no')
             coins -= 1
     print('your count: '+format(coins))
-    exit = input('if you want to exit, press(enter), else press(space)')
+    exit = input('if you want to exit, press(enter), else press(space and enter)')
     if exit == '':
             true = False
