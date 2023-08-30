@@ -12,7 +12,7 @@ while true:
     application = random.randint(1, 2)
     if application == 1:
         result = input(var1+'+'+var2)
-        if result == format(var1 + var2):
+        if result == format(int(var1) + int(var2)):
             print('yes')
             coins += 1
         else:
@@ -20,7 +20,7 @@ while true:
             coins -= 1
     if application == 2:
         result = input(var1+'-'+var2)
-        if result == format(var1 - var2):
+        if result == format(int(var1) - int(var2)):
             print('yes')
             coins += 1
         else:
