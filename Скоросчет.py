@@ -11,7 +11,7 @@ while true:
     var2 = random.randint(0, 10)
     application = random.randint(1, 2)
     if application == 1:
-        result = input(var1+'+'+var2)
+        result = input(format(var1)+'+'+format(var2))
         if result == format(int(var1) + int(var2)):
             print('yes')
             coins += 1
@@ -19,14 +19,14 @@ while true:
             print('no')
             coins -= 1
     if application == 2:
-        result = input(var1+'-'+var2)
+        result = input(format(var1)+'-'+format(var2))
         if result == format(int(var1) - int(var2)):
             print('yes')
             coins += 1
         else:
             print('no')
             coins -= 1
-    print('your count: '+coins)
+    print('your count: '+format(coins))
     exit = input('if you want to exit, press(enter), else press(space)')
     if exit == '':
             true = False
